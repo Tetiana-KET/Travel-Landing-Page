@@ -1,0 +1,18 @@
+/* Для <header>не используйте 
+старайтесь не использовать позиционирование absolute
+при ширине экрана не меньше 1440рх */
+.site-container {
+    overflow: hidden;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.first-screen {
+    background-image: url(../assets/img/bgimage.png);
+    background-size: cover;
+    min-height: 765px;
+}
+
