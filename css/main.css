@@ -1,5 +1,3 @@
-/* Travel Landing Page */
-
 /* lato-regular - latin */
 @font-face {
     font-family: 'Lato';
@@ -36,18 +34,69 @@
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-html {
-    box-sizing: border-box;
+body {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000;
 }
 
-*, 
-*::before, 
-*::after {
-    box-sizing: inherit;
+/* header styles starts */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .container {
-    width: 1440px;
+    max-width: 1060px;
     margin: 0 auto;
 }
 
+.header-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* выровнять слова по низу строки */
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
+}
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.header-nav-link {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 82px;
+}
+
+.header-nav-item:hover,
+.header-nav-item:focus,
+.header-nav-item:active {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    transform: scale(1.3);
+    transition: 0.8s;
+}
+/* header styles ends */
+
+/* start-screen styles starts */
+.start-screen {
+    height: 100vh;
+    background-image: url(../assets/img/bg-image-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* start-screen styles starts */
