@@ -80,23 +80,27 @@ body {
     margin-right: 82px;
 }
 
+.header-nav-item {
+    transition: 1s;
+}
 .header-nav-item:hover,
 .header-nav-item:focus,
 .header-nav-item:active {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transform: scale(1.3);
-    transition: 0.8s;
+    transition: 1s;
 }
 /* header styles end */
 
 /* start-screen styles start */
 .start-screen {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-image: url(../assets/img/bg-image-1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 263px;
+    padding-bottom: 376px;
 }
 
 .start-screen-title {
@@ -152,12 +156,73 @@ body {
     color: #FFFFFF;
     background-color: #1B7DFF;
     border: 0;
+    transition: 1s;
 }
 .search-form-btn:hover,
 .search-form-btn:active,
 .search-form-btn:focus {
     transform: scale(1.3);
-    transition: 0.8s;
+    transition: 1s;
     background-color: #1b50ffce;
 }
-/* start-screen styles start */
+/* start-screen styles end */
+
+/* benefits styles start */
+.benefits-container {
+    position: relative;
+    max-width: 1260px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993)
+}
+
+.benefits-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    padding: 93px 893px 88px 99px;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    background-color: #FFFFFF;
+    color: #102746;
+}
+
+.benefits-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 55px;/* щтступы между колонками*/
+    padding: 0 100px 112px;
+}
+
+.benefits-card {
+    grid-column: span 1;
+}
+
+.benefits-card-icon-wrap {
+    margin-bottom: 37px;
+    max-width: 66px;
+}
+
+.benefits-card-icon {
+    display: block;
+}
+
+.benefits-card-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 26px;
+}
+
+.benefits-text {
+    margin-bottom: 39px;
+}
+
+.learn-more {
+    text-transform: uppercase;
+    color: #006DFE;
+}
+
+/* benefits styles end */
