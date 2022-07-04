@@ -291,27 +291,66 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 10px;
+    margin-bottom: 131px;
 }
 
-.one-place-photo {
-
+.figure-for-photo {
+    position: relative;
+    overflow: hidden;
 }
 
-.big-photo {
-    grid-column: span 3;
+.figure-for-photo::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(21, 24, 36, 0.4);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
 }
 
-.places-photo-img-big {
-    height: 354px;
-    object-fit: cover;
+.places-photo-img {
+    transition: 1s all;
 }
 
-.small-photo{
-    grid-column: span 3;
+.figure-for-photo:hover .places-photo-img {
+    transform: scale(1.05);
+    position: absolute;
+    z-index: 3;
 }
 
 .photo-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 29px;
+    bottom: 27px;
+    z-index: 5;
+}
 
+.places-photo-img {
+    width: 100%;
+    height: 100%;
+}
+
+.big-photo-fig {
+    grid-column: span 3;
+    height: 354px;
+}
+
+.small-photo-fig {
+    grid-column: span 2;
+}
+
+.places-card-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
 }
 /* get-inspired Section styles start */
 
