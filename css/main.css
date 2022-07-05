@@ -46,11 +46,13 @@ body {
 .container {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .general-container {
     max-width: 1260px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-title {
@@ -550,7 +552,14 @@ body {
 .footer-links {
     width: 555px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.link-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .link {
