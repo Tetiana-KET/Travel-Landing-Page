@@ -75,10 +75,17 @@ body {
 
 /* header styles start */
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    transition: .8s linear;
+    padding-bottom: 56px;
+    z-index: 999;
+}
+
+.header_active {
+    background: rgba(21, 24, 36, 0.9);
 }
 
 .header-wrapper {
