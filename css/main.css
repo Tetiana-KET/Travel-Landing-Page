@@ -252,7 +252,7 @@ body {
     text-transform: uppercase;
     color: #006DFE;
     background: url(../assets/svg/arrow.svg) no-repeat 95% center;
-    transition: .5s;
+    transition: 1s;
 }
 
 .learn-more:hover, 
@@ -278,7 +278,7 @@ body {
     text-transform: uppercase;
     color: #006DFE;
     background: url(../assets/svg/arrow.svg) no-repeat right center;
-    transition: .5s;
+    transition: 1s;
 }
 
 .view-all:hover,
@@ -344,13 +344,72 @@ body {
 
 .small-photo-fig {
     grid-column: span 2;
+    height: 283px;
 }
 
 .places-card-link {
     position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: 10;
 }
 /* get-inspired Section styles start */
 
+
+/* tours styles start */
+.tours {
+    padding-bottom: 62px;
+}
+
+.tours-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 77px;
+    color: #102746;
+}
+
+.tour-photo {
+    width: 597px;
+}
+
+
+.tour-description {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+    margin-bottom: 58px;
+}
+
+.tour-title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 85px;
+}
+
+.tour-link {
+    background: url(../assets/svg/arrow.svg) no-repeat left 170px center;
+    text-transform: uppercase;
+    color: #006DFE;
+    transition: 1s all;
+}
+
+.tour-link:hover {
+    font-weight: bold;
+    color: #0b438b;
+}
+
+.kyoto-tour {
+    flex-direction: row-reverse;
+}
+
+.neighbot-arrow-space {
+    background: url(../assets/svg/arrow.svg) no-repeat left 206px center;
+}
+/* tours styles end */
+
+/* tours styles end */
+/* tours styles end */
