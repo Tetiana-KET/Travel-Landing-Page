@@ -8,3 +8,16 @@
 //         }
 //     };
 // }());
+
+// burger handler
+(function () {
+    const burgerItem = document.querySelector('.burger');
+    const menuCloseItem = document.querySelector('.header-nav');
+    const menu = document.querySelector('.header-nav')
+    burgerItem.addEventListener('click', () => {
+        menu.classList.add('header-nav-active');
+    })
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header-nav-active');
+    })
+}());
