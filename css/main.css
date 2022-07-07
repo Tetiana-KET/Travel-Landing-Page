@@ -42,12 +42,12 @@ body {
     line-height: 1.2;
     color: #102746;
 }
-
+/* 
 .site-container {
     max-width: 1440px;
     margin: 0 auto;
     overflow: hidden;
-}
+} */
 
 .container {
     max-width: 1060px;
@@ -659,12 +659,12 @@ body {
 @media screen and (max-width: 960px) {
 
     .start-screen {
-        padding-top: 163px;
-        padding-bottom: 276px;
+        padding-top: 150px;
+        padding-bottom: 250px;
     }
 
     .benefits-container {
-        box-shadow:none;
+        box-shadow: none;
     }
 
     .search-form-input {
@@ -709,8 +709,9 @@ body {
         padding: 60px 15px;
     }
 }
-
+/* 768 - планшет, 767 - все что меньше планшета */
 @media screen and (max-width: 767px) {
+   
     .header-burger {
         display: block;
     }
@@ -768,11 +769,108 @@ body {
     .header-nav-close-line:first-child {
         transform: translateY(-50%) rotate(-45deg);
     }
+
+    .header-wrapper {
+        padding-top: 25px;
+    }
+
+    .start-screen {
+        padding-top: 90px;
+        padding-bottom: 250px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        padding: 40px 15px;
+    }
+
+    .logo-footer {
+        display: block;
+        width: 25%;
+        margin: 0 auto 15px;
+    }
+
+    .footer-links {
+        width: 100%;
+    }
+
 }
 
-@media screen and (max-width: 585px) {
+@media screen and (max-width: 640px) {
 
+    .section-title {
+        margin-bottom: 25px;
+    }
+
+    .section-title::after {
+        display: block;
+        content: '';
+        width: 40%;
+        height: 3px;
+        background-color: #006DFE;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
+@media screen and (max-width: 540px) {
 
+    .start-screen-title {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .search-form-input {
+        margin-right: 0;
+        width: 100%;
+        padding-bottom: 12px;
+    }
+
+    .search-form-input::placeholder {
+        font-size: 14px;
+    }
+
+    .search-form-btn {
+        width: 100%;
+    }
+
+    .benefits-card {
+        grid-column: span 3;
+    }
+
+    .figure-for-photo {
+        height: 270px;
+    }
+
+    .top-places-card {
+        grid-column: span 6;
+    }
+
+    .top-places-card-img {
+        width: 100%;
+    }
+
+    .see-more-link {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .tour-title {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .tour-description {
+        font-size: 16px;
+        line-height: 1.2;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
 /* media end */
